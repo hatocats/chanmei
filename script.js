@@ -1,26 +1,21 @@
-window.addEventListener("load", () => {
+window.addEventListener("DOMContentLoaded", () => {
     const loading = document.getElementById("loading");
     const content = document.getElementById("content");
   
-    // ローディング終了処理
-    const hideLoading = () => {
-      loading.style.display = "none"; // ローディング画面を非表示
-      content.style.display = "block"; // メインコンテンツを表示
-    };
+    // 4秒後にローディングを終了
+    setTimeout(() => {
+      loading.style.display = "none";
+      content.style.display = "block";
+    }, 4000);
   
-    // ローディングを4秒後に終了
-    setTimeout(hideLoading, 3000);
-  
-    // タイムアウト（5秒後に強制終了）
+    // 5秒で強制終了
     setTimeout(() => {
       if (loading.style.display !== "none") {
-        hideLoading();
+        loading.style.display = "none";
+        content.style.display = "block";
       }
-    }, 5000); // 5秒後に強制非表示
+    }, 5000);
   });
-  
-
-
 
   const slides = document.querySelectorAll(".slide");
   const slidesWrapper = document.querySelector(".slides");

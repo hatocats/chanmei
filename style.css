@@ -6,7 +6,10 @@ body {
     /* スクロールを防ぐ */
     background: #002a7d;
   }
-
+#content{
+    display: none;
+    
+}
   /* ローディング画面 */
   #loading {
     position: fixed;
