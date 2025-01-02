@@ -1,30 +1,3 @@
-  window.addEventListener("load", () => {
-    const loading = document.getElementById("loading");
-    const content = document.getElementById("content");
-
-    // 画像をバウンドさせながらフェードアウト
-    gsap.to(".loading-image", {
-      duration: 1,
-      y: -50,
-      opacity: 0,
-      ease: "power2.out",
-      delay: 0.5, // 表示時間を0.5秒追加
-      onComplete: () => {
-        // ローディング画面を非表示
-        loading.style.display = "none";
-
-        // メインコンテンツをフェードイン
-        gsap.to(content, {
-          duration: 1,
-          opacity: 1,
-          ease: "power2.out",
-        });
-      },
-    });
-  });
-
-
-
   const slides = document.querySelectorAll(".slide");
   const slidesWrapper = document.querySelector(".slides");
   const thumbnailsContainer = document.querySelector(".thumbnails");
@@ -114,4 +87,29 @@
     repeat: -1, // 無限ループ
     yoyo: true, // 前後に動く
     repeatDelay: 3,
+  });
+
+  window.addEventListener("load", () => {
+    const loading = document.getElementById("loading");
+    const content = document.getElementById("content");
+
+    // 画像をバウンドさせながらフェードアウト
+    gsap.to(".loading-image", {
+      duration: 1,
+      y: -50,
+      opacity: 0,
+      ease: "power2.out",
+      delay: 0.5, // 表示時間を0.5秒追加
+      onComplete: () => {
+        // ローディング画面を非表示
+        loading.style.display = "none";
+
+        // メインコンテンツをフェードイン
+        gsap.to(content, {
+          duration: 1,
+          opacity: 1,
+          ease: "power2.out",
+        });
+      },
+    });
   });
