@@ -260,6 +260,7 @@ body {
   @media screen and (max-width:480px) {
     body{
         height: auto;
+        overflow: scroll;
     }
     header {
       position: static;
@@ -267,7 +268,7 @@ body {
     }
 
     h1 {
-      font-size: 5em;
+      font-size: 4.5em;
     }
 
     .background-name {
@@ -296,7 +297,9 @@ body {
     .name small {
       margin-left: auto;
     }
-
+    .arrow{
+        width: 30px;
+    }
     .character {
       margin-top: 30px;
       justify-content: center;
