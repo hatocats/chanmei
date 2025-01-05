@@ -5,6 +5,7 @@ body {
     overflow: hidden;
     /* スクロールを防ぐ */
     background: #002a7d;
+    text-rendering: optimizeLegibility;
   }
 #content{
     display: none;
@@ -281,7 +282,6 @@ body {
   @media screen and (max-width:480px) {
     body{
         height: auto;
-        overflow: scroll;
     }
     header {
       position: static;
