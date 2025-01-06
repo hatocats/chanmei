@@ -281,7 +281,8 @@ body {
 
   @media screen and (max-width:480px) {
     body{
-        height: auto;
+      overflow: scroll;
+      height: auto;
     }
     header {
       position: static;
@@ -332,14 +333,10 @@ body {
     }
 
     footer {
-      position: absolute;
+      position: static;
       text-align: center;
-      right: 0;
-      left: 0;
       background-image: linear-gradient(78deg, rgba(255, 84, 54, 0.8), rgba(255, 255, 255, 0)), linear-gradient(185deg, rgba(69, 54, 255, 0.8), rgba(255, 255, 255, 0)), linear-gradient(340deg, rgb(0 53 153 / 80%), rgba(255, 255, 255, 0));
       transform: none;
-      bottom: 0;
-      top: auto;
       color: #ffffffc7;
     }
   }
