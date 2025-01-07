@@ -7,10 +7,12 @@ body {
     background: #002a7d;
     text-rendering: optimizeLegibility;
   }
-#content{
+  button {
+    all: unset;
+  }
+  #content{
     display: none;
-
-}
+  }
   /* ローディング画面 */
   #loading {
     position: fixed;
@@ -113,7 +115,6 @@ body {
       font-size: 6em;
       text-align: center;
       font-family: "Rampart One", sans-serif;
-      font-weight: bold;
       margin: 0;
     }
 
@@ -311,7 +312,9 @@ body {
     .name {
       width: 100%;
     }
-
+    .arrow-background{
+      padding: 10px;
+    }
     .carousel {
       width: 100%;
       margin-top: 20px;
