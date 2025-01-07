@@ -7,6 +7,10 @@ body {
     background: #002a7d;
     text-rendering: optimizeLegibility;
   }
+  button {
+    all: unset;
+    text-align: center;
+  }
   #content{
     display: none;
   }
@@ -307,10 +311,6 @@ body {
     }
     .arrow-background{
       padding: 10px;
-      button {
-        all: unset;
-        text-align: center;
-      }
     }
     .carousel {
       width: 100%;
