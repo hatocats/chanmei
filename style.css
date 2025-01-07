@@ -115,7 +115,8 @@ body {
     h1 {
       font-size: 6em;
       text-align: center;
-      font-family: "Rampart One", sans-serif;
+      font-family: "Cherry Bomb One", serif;
+      letter-spacing: 20px;
       margin: 0;
     }
 
@@ -133,7 +134,7 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    font-family: "Rampart One", sans-serif;
+    font-family: "Cherry Bomb One", serif;
     font-weight: bold;
     color: white;
     z-index: 100;
@@ -321,9 +322,6 @@ body {
 
     .name small {
       margin-left: auto;
-    }
-    .arrow{
-        width: 30px;
     }
     .character {
       margin-top: 30px;
