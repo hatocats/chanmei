@@ -7,9 +7,6 @@ body {
     background: #002a7d;
     text-rendering: optimizeLegibility;
   }
-  button {
-    all: unset;
-  }
   #content{
     display: none;
   }
@@ -146,10 +143,6 @@ body {
     max-width: 800px;
     border-radius: 20px;
     box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.229);
-  }
-  .arrow{
-    width: 50px !important;
-    height: 50px !important;
   }
   .slides {
     display: flex;
@@ -314,6 +307,10 @@ body {
     }
     .arrow-background{
       padding: 10px;
+      button {
+        all: unset;
+        text-align: center;
+      }
     }
     .carousel {
       width: 100%;
