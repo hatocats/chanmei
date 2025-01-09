@@ -112,7 +112,7 @@ main {
   }
 
   span {
-    color: rgb(7, 131, 255);
+    color: white;
   }
 
   h1 {
@@ -121,11 +121,13 @@ main {
     font-family: "Hi Melody", serif;
     margin: 0;
     letter-spacing: 24px;
+    color: white;
   }
 
   small {
     margin-left: -30px;
     font-size: 16px;
+    color: rgb(7, 131, 255);
   }
 
   small i {
